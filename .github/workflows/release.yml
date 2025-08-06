@@ -12,23 +12,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-      # - name: Download latest csf translate file in INI format
-      #   run: ./.github/scripts/download_latest_csf.cmd
-      #   shell: cmd
-      # - name: Covent format to csf
-      #   run: |
-      #     ./.github/bin/CsfCoventer/CsfCoventer.exe "./ra2.csf.ini" "./ra2md.csf.ini"
-      #     Copy-Item "./ra2.csf" -Destination "./_src_files/language/" -Force
-      #     Copy-Item "./ra2md.csf" -Destination "./_src_files/langmd/" -Force
-      - name: Covent json to csf
-        run: |
-          cd ./.github/scripts/convert-json-to-csf
-          node index.js
-      - name: Copy csf file for pack
-        run: |
-          Copy-Item "./ra2.csf" -Destination "./_src_files/language/" -Force
-          Copy-Item "./ra2md.csf" -Destination "./_src_files/langmd/" -Force
-        shell: pwsh
       - name: Convert cameo to shp files
         run: |
           cd ./.github/scripts/convert-png-to-shp
@@ -40,20 +23,6 @@ jobs:
           Copy-Item "./cameo/yr/*.shp" -Destination "./_src_files/cameomd/" -Force
           ./.github/bin/ccmixar/ccmixar.exe pack -game ra2 -dir "./_src_files/cameo" -mix "./_src_files/language/cameo.mix" -checksum -encrypt
           ./.github/bin/ccmixar/ccmixar.exe pack -game ra2 -dir "./_src_files/cameomd" -mix "./_src_files/langmd/cameomd.mix" -checksum -encrypt
-        shell: pwsh
-      - name: Copy other files
-        run: |
-          Copy-Item "./bik/ra2/*" -Destination "./_src_files/language/" -Force
-          Copy-Item "./bik/yr/*" -Destination "./_src_files/langmd/" -Force
-          Copy-Item "./credits/credits.txt" -Destination "./_src_files/language/" -Force
-          Copy-Item "./credits/creditsmd.txt" -Destination "./_src_files/langmd/" -Force
-          Copy-Item "./fnt/game.fnt" -Destination "./_src_files/language/" -Force
-          Copy-Item "./shp/grfxtxt.shp" -Destination "./_src_files/language/" -Force
-        shell: pwsh
-      - name: Pack audio.mix & audiomd.mix
-        run: |
-          ./.github/bin/ccmixar/ccmixar.exe pack -game ra2 -dir "./_src_files/audio" -mix "./_src_files/language/audio.mix"
-          ./.github/bin/ccmixar/ccmixar.exe pack -game ra2 -dir "./_src_files/audiomd" -mix "./_src_files/langmd/audiomd.mix"
         shell: pwsh
       - name: Pack langeuage pack mix files
         run: |
@@ -68,26 +37,6 @@ jobs:
           7z a "RedAlert2-LanguagePack-zh_hans-NoChineseAudio.zip" .\subtitle\*
           7z a "RedAlert2-LanguagePack-zh_hans-NoChineseAudio.zip" language.mix
           7z a "RedAlert2-LanguagePack-zh_hans-NoChineseAudio.zip" langmd.mix
-      - name: Pack chinese audios into bag files
-        run: |
-          cd ./.github/scripts/pack-audio-bags
-          npm i
-          node index.js
-      - name: Pack other chinese audios to mix folders
-        run: |
-          Copy-Item "./audio_inMIX/ra2/*" -Destination "./_src_files/audio/" -Force
-          Copy-Item "./audio_inMIX/yr/*" -Destination "./_src_files/audiomd/" -Force
-      - name: Pack langeuage pack mix files
-        run: |
-          ./.github/bin/ccmixar/ccmixar.exe pack -game ra2 -dir "./_src_files/language" -mix "./language.mix" -checksum -encrypt
-          ./.github/bin/ccmixar/ccmixar.exe pack -game ra2 -dir "./_src_files/langmd" -mix "./langmd.mix" -checksum
-        shell: pwsh
-      - name: Zip language pack with Chinese Audio
-        run: |
-          7z a "RedAlert2-LanguagePack-zh_hans.zip" Taunts\
-          7z a "RedAlert2-LanguagePack-zh_hans.zip" .\subtitle\*
-          7z a "RedAlert2-LanguagePack-zh_hans.zip" language.mix
-          7z a "RedAlert2-LanguagePack-zh_hans.zip" langmd.mix
       - name: Upload files to release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
@@ -95,15 +44,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
           files: |
-            RedAlert2-LanguagePack-zh_hans.zip
             RedAlert2-LanguagePack-zh_hans-NoChineseAudio.zip
-      - name: Upload pack to artifact
-        uses: actions/upload-artifact@v4
-        if: ${{ !startsWith(github.ref, 'refs/tags/') }}
-        with:
-          name: LanguagePack-zh_hans
-          path: RedAlert2-LanguagePack-zh_hans.zip
-          retention-days: 90
       - name: Upload noaudio pack to artifact
         uses: actions/upload-artifact@v4
         if: ${{ !startsWith(github.ref, 'refs/tags/') }}
@@ -111,26 +52,3 @@ jobs:
           name: LanguagePack-zh_hans-NoChineseAudio
           path: RedAlert2-LanguagePack-zh_hans-NoChineseAudio.zip
           retention-days: 90
-      - name: Upload to OSS (Commit)
-        uses: iamapig120/upload-to-oss@master
-        if: ${{ !startsWith(github.ref, 'refs/tags/') }}
-        with:
-          key-id: ${{ secrets.OSS_KEY_ID }}
-          key-secret: ${{ secrets.OSS_KEY_SECRET }}
-          region: oss-cn-shanghai
-          bucket: ra2-chs-pack
-          assets: |
-            RedAlert2-LanguagePack-zh_hans.zip:/latest-commit.zip
-            RedAlert2-LanguagePack-zh_hans-NoChineseAudio.zip:/latest-commit-noaudio.zip
-      - name: Upload to OSS (Release)
-        uses: iamapig120/upload-to-oss@master
-        if: startsWith(github.ref, 'refs/tags/')
-        with:
-          key-id: ${{ secrets.OSS_KEY_ID }}
-          key-secret: ${{ secrets.OSS_KEY_SECRET }}
-          region: oss-cn-shanghai
-          bucket: ra2-chs-pack
-          assets: |
-            RedAlert2-LanguagePack-zh_hans.zip:/latest-release.zip
-            RedAlert2-LanguagePack-zh_hans-NoChineseAudio.zip:/latest-release-noaudio.zip
-          
