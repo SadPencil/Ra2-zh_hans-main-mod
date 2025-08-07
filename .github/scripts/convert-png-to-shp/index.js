@@ -83,7 +83,7 @@ const textCtxTop = canvasForTextTop.getContext('2d', {
 
 /** @type {number[]} */
 let textLineTotalWidth = []
-const lineHeight = 9
+const lineHeight = 10
 /** @type {string[]} */
 let titleLines = []
 
