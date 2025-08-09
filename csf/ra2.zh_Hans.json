@@ -708,7 +708,7 @@
         "Value": "互联网游戏设置"
     },
     "GUI:Connection": {
-        "Value": "连线"
+        "Value": "连接"
     },
     "GUI:Better": {
         "Value": "更好"
@@ -1134,7 +1134,7 @@
         "Value": "进行战役模式或遭遇战。"
     },
     "STT:MainButtonWWOnline": {
-        "Value": "连线至互联网进行游戏。"
+        "Value": "连接到互联网进行游戏。"
     },
     "STT:MainButtonNetwork": {
         "Value": "和局域网内的朋友一同游戏。"
@@ -2103,7 +2103,7 @@
         "Value": "光棱坦克"
     },
     "Name:XCOMET": {
-        "Value": "位置标定器"
+        "Value": "占位符"
     },
     "Name:ORCA": {
         "Value": "鹞式战机"
@@ -2172,10 +2172,10 @@
         "Value": "已部署的野炮"
     },
     "Name:GAREFN": {
-        "Value": "盟军矿石精炼厂"
+        "Value": "盟军矿石冶炼厂"
     },
     "Name:NAREFN": {
-        "Value": "苏联矿石精炼厂"
+        "Value": "苏联矿石冶炼厂"
     },
     "Name:GASILO": {
         "Value": "贮藏槽"
@@ -2199,7 +2199,7 @@
         "Value": "指挥中心"
     },
     "Name:GASPYSAT": {
-        "Value": "间谍卫星"
+        "Value": "侦查卫星"
     },
     "Name:GAGAP": {
         "Value": "裂缝产生器"
@@ -2280,7 +2280,7 @@
         "Value": "雷达"
     },
     "Name:NAPSIS": {
-        "Value": "心灵探测器"
+        "Value": "心灵感应器"
     },
     "Name:NAWAST": {
         "Value": "废弃物处理设施"
@@ -2463,7 +2463,7 @@
         "Value": "旧武器工厂"
     },
     "Name:GAOLDCC4": {
-        "Value": "旧精炼厂"
+        "Value": "旧冶炼厂"
     },
     "Name:GAOLDCC5": {
         "Value": "旧先进发电厂"
@@ -3438,7 +3438,7 @@
         "Value": "关闭"
     },
     "TXT_MULTIPLAYER_GAME": {
-        "Value": "多人连线游戏"
+        "Value": "多人游戏"
     },
     "TXT_SCRNCAP": {
         "Value": "截取游戏画面"
@@ -3525,7 +3525,7 @@
         "Value": "地图：%s"
     },
     "TXT_PLAYER_CHANGED_LATENCY": {
-        "Value": "玩家%s改变了连线速度设置。"
+        "Value": "玩家%s改变了连接速度设置。"
     },
     "TXT_PLAYER_CHANGED_SPEED": {
         "Value": "玩家%s改变了游戏速度设置。"
@@ -3585,7 +3585,7 @@
         "Value": "消息："
     },
     "TXT_CONNECTION_LOST": {
-        "Value": "与%s的连线断线了！"
+        "Value": "与%s的连接断开了！"
     },
     "TXT_LEFT_GAME": {
         "Value": "%s离开了游戏。"
@@ -3609,7 +3609,7 @@
         "Value": "名称："
     },
     "TXT_OUT_OF_SYNC": {
-        "Value": "重新连线发生错误！"
+        "Value": "重新连接发生错误！"
     },
     "TXT_PACKET_TOO_LATE": {
         "Value": "文件封包接收超时！"
@@ -3663,7 +3663,7 @@
         "Value": "您的名称必须是独一无二的。"
     },
     "TXT_RECONNECTING_TO": {
-        "Value": "连线到%s中断了，尝试重新连线。"
+        "Value": "连接到%s中断，正在尝试重新连接。"
     },
     "TXT_WAITING_FOR_CONNECTIONS": {
         "Value": "等待所有玩家进入游戏 .."
@@ -3735,7 +3735,7 @@
         "Value": "没有拨号音。请确定数据机已经连接到电话线上，再试一次。"
     },
     "TXT_CONNECTING": {
-        "Value": "连线中 .."
+        "Value": "连接中 .."
     },
     "TXT_SELECT_SETTINGS": {
         "Value": "请选择'游戏设置'来配置默认选项"
@@ -3759,7 +3759,7 @@
         "Value": "错误 - 数据机回传错误状态。"
     },
     "TXT_ERROR_TIMEOUT": {
-        "Value": "错误 - 超过连线等待时间。"
+        "Value": "错误 - 超过连接等待时间。"
     },
     "TXT_RECEIVING_SCENARIO": {
         "Value": "自主机电脑接收关卡档案。"
@@ -3795,16 +3795,16 @@
         "Value": "无法找到数据机，请检查电源及缆线。"
     },
     "TXT_NULL_CONNERR_CHECK_CABLES": {
-        "Value": "连线错误！请检查缆线。尝试重新连接 .."
+        "Value": "连接错误！请检查您的线缆。正在尝试重新连接 .."
     },
     "TXT_MODEM_CONNERR_REDIALING": {
-        "Value": "连线错误！重新拨号中 .."
+        "Value": "连接错误！正在重新拨号..."
     },
     "TXT_MODEM_CONNERR_WAITING": {
-        "Value": "连线错误！等待拨号进来 .."
+        "Value": "连接错误！正在等待拨入..."
     },
     "TXT_WAITING_CONNECT": {
-        "Value": "等候连线 .."
+        "Value": "等候连接..."
     },
     "TXT_CUSTOM": {
         "Value": "自定义 -"
@@ -3990,7 +3990,7 @@
         "Value": "您的帐号暂时被锁了。您想打开浏览器，了解更多信息吗？"
     },
     "TXT_CANT_CONNECT": {
-        "Value": "无法连线到 Westwood Online，请检查网络连线。"
+        "Value": "无法连接到 Westwood Online，请检查网络连接。"
     },
     "TXT_CHANCREATE_FAILED": {
         "Value": "无法开启频道"
@@ -4053,7 +4053,7 @@
         "Value": "取得服务器列表"
     },
     "TXT_CONNECTING_SERVER": {
-        "Value": "连线至 Westwood Online"
+        "Value": "连接至 Westwood Online"
     },
     "TXT_REQ_CHANLIST": {
         "Value": "请求频道列表"
@@ -4131,7 +4131,7 @@
         "Value": "您尚未加入频道之前，无法发送消息"
     },
     "TXT_WOL_CONNLOST": {
-        "Value": "与 Westwood Online 失去连线，游戏外的玩家将无法呼叫您。"
+        "Value": "与 Westwood Online 失去连接，游戏外的玩家将无法呼叫您。"
     },
     "TXT_DSOUND_PROCEED": {
         "Value": "音效关闭，进行中。"
@@ -4230,10 +4230,10 @@
         "Value": "点选名称，提议从游戏中踢出该玩家。"
     },
     "TXT_RECONNECT_HELP2": {
-        "Value": "如果其他所有玩家的连线状况均为红色，则可能是您出现了连接问题"
+        "Value": "如果其他所有玩家的连接状况均为红色，则可能是您出现了连接问题"
     },
     "TXT_RECONNECT_HELP3": {
-        "Value": "检查网络连线状态，确定您是否已经断线"
+        "Value": "请检查网络连接状态，以确定您是否断开了网络连接"
     },
     "TXT_RECONNECT_HELP4": {
         "Value": "已从网络断开。"
@@ -4695,7 +4695,7 @@
         "Value": "您至少需要两名玩家才能开始游戏！"
     },
     "TXT_DOWNLOAD_FAILED": {
-        "Value": "下载失败，请检查网络连线，稍候再试。"
+        "Value": "下载失败，请检查网络连接并稍候再试。"
     },
     "TXT_GAME_RESTART": {
         "Value": "红色警戒 2 现在会重新启动，自动更新文件。"
@@ -4872,19 +4872,19 @@
         "Value": "任务目标一：指挥盟军大兵离开基地"
     },
     "MISSION:TRN01b": {
-        "Value": "任务目标二：选择所有盟军大兵并指挥他们前往向右边的桥前进"
+        "Value": "任务目标二：选择所有盟军大兵并指挥他们向右边的桥前进"
     },
     "MISSION:TRN01c": {
-        "Value": "任务目标三：选择工程师并移动进入维修小屋"
+        "Value": "任务目标三：选择工程师并将他移进维修小屋"
     },
     "MISSION:TRN01d": {
-        "Value": "任务目标四：移动进入射程并摧毁附近的目标"
+        "Value": "任务目标四：移动到射程内并摧毁附近的目标"
     },
     "MISSION:TRN01e": {
         "Value": "任务目标四完成"
     },
     "MISSION:TRN01f": {
-        "Value": "任务目标五：部署（双击键）您的部队并摧毁较远的目标"
+        "Value": "任务目标五：部署（双击）您的部队并摧毁较远的目标"
     },
     "MISSION:TRN01g": {
         "Value": "任务目标五完成"
@@ -4902,7 +4902,7 @@
         "Value": "第一天训练任务完成"
     },
     "MISSION:TRN02a": {
-        "Value": "任务目标一：移动您的机动基地车进入开阔的地方"
+        "Value": "任务目标一：移动您的机动基地车进入开阔地区"
     },
     "MISSION:TRN02b": {
         "Value": "任务目标二：部署您的机动基地车，使之成为建造场"
@@ -4911,10 +4911,10 @@
         "Value": "任务目标三：建造一座发电厂"
     },
     "MISSION:TRN02d": {
-        "Value": "任务目标四：建造一座矿石精炼厂"
+        "Value": "任务目标四：建造一座矿石冶炼厂"
     },
     "MISSION:TRN02e": {
-        "Value": "您全新的超时空采矿车将会自动开始收集采矿"
+        "Value": "您全新的超时空采矿车将会自动开始收集矿石"
     },
     "MISSION:TRN02f": {
         "Value": "任务目标五：建造一座兵营"
@@ -4929,7 +4929,7 @@
         "Value": "任务目标七：摧毁红军基地"
     },
     "MISSION:TRN02_Hint1": {
-        "Value": "将您的大兵部署于您的基地出入口附近以取得较佳的防御效果"
+        "Value": "将您的大兵部署于您的基地出入口附近以取得更好的防御效果"
     },
     "MISSION:TRN02_Hint2": {
         "Value": "指挥您的部队驻守在厂房内部，以在敌军炮火下获得更好的保护"
@@ -4995,7 +4995,7 @@
         "Value": "任务目标一：在敌方心灵控制增幅器正式运作之前，将之摧毁"
     },
     "MISSION:All04c": {
-        "Value": "心灵控制增幅器连线预估时间："
+        "Value": "心灵控制增幅器上线预估时间："
     },
     "MISSION:All09a": {
         "Value": "任务目标一：占领遗迹中的苏联研究设施，或将之摧毁"
@@ -6439,7 +6439,7 @@
         "Extra": "u33e LBL"
     },
     "VOX:csofu34": {
-        "Value": "老滑头爱因斯坦的另一项鬼把戏。盟军的超时空采矿车能自矿区采集矿石，然后瞬间连车带矿传送回精炼厂。",
+        "Value": "老滑头爱因斯坦的另一项鬼把戏。盟军的超时空采矿车能自矿区采集矿石，然后瞬间连车带矿传送回冶炼厂。",
         "Extra": "u34e LBL"
     },
     "VOX:csofu35": {
@@ -8031,7 +8031,7 @@
         "Extra": "sede LBL"
     },
     "VOX:itessee": {
-        "Value": "检查连线。",
+        "Value": "检查连接。",
         "Extra": "seee LBL"
     },
     "VOX:iyurata": {
@@ -8155,11 +8155,11 @@
         "Extra": "v13e LBL"
     },
     "VOX:ma1ev14": {
-        "Value": "命令超时空采矿车收集更多矿石，就能赚得愈多资金。",
+        "Value": "命令超时空采矿车收集更多矿石，就能赚得更多资金。",
         "Extra": "v14e LBL"
     },
     "VOX:ma1ev15": {
-        "Value": "这种车辆称为超时空采矿车-可以用来收集有价矿石，满载之后，会传送回精炼厂卸货处。",
+        "Value": "这种车辆称为超时空采矿车-可以用来收集有价矿石，满载之后，会传送回冶炼厂卸货处。",
         "Extra": "v15e LBL"
     },
     "VOX:ma1ev16": {
@@ -8363,11 +8363,11 @@
         "Extra": "v04e LBL"
     },
     "VOX:maaev05": {
-        "Value": "长官，要是您建造并部署一枚间谍卫星，您就能看见整个作战区域。",
+        "Value": "长官，要是您建造并部署一枚侦查卫星，您就能看见整个作战区域。",
         "Extra": "v05e LBL"
     },
     "VOX:maaev06": {
-        "Value": "我们在这区域的资源不足，长官。或许您应该建造矿石精炼器，我们就能从所有的得到更多。",
+        "Value": "我们在这区域的资源不足，长官。或许您应该建造矿石精炼器，我们就能中获取更多资源。",
         "Extra": "v06e LBL"
     },
     "VOX:mabev01": {
@@ -8747,7 +8747,7 @@
         "Extra": "u02e LBL"
     },
     "VOX:msbyu03": {
-        "Value": "换做我是你，我就不会建造心灵探测器。",
+        "Value": "换做我是你，我就不会建造心灵感应器。",
         "Extra": "u03e LBL"
     },
     "VOX:msbyu04": {
@@ -8827,11 +8827,11 @@
         "Extra": "s03e LBL"
     },
     "VOX:mt2ds04": {
-        "Value": "干的好，基地现在有了电力，你可以开始建更多建筑了。你所建的每栋建筑都会耗费电力。要是电力不足，有些建筑就会停止运作，有些运作的效率会降低。鼠标左键点选画面右手边的精炼厂图示，建造一间精炼厂。",
+        "Value": "干的好，基地现在有了电力，你可以开始建更多建筑了。你所建的每栋建筑都会耗费电力。要是电力不足，有些建筑就会停止运作，有些运作的效率会降低。鼠标左键点选画面右手边的冶炼厂图示，建造一间矿石冶炼厂。",
         "Extra": "s04e LBL"
     },
     "VOX:mt2ds05": {
-        "Value": "现在既然你已经有了发电厂，就能建个兵营了。许多建筑和部队都会互相依存。除非你建了发电厂，不然就不能建兵营。要是没有兵营，就不能训练部队。鼠标左键点选兵营，开始建造。完成之后，将兵营放置到地表，就像你建精炼厂及发电厂那样。",
+        "Value": "既然现在你已经有了发电厂，那就能建造兵营了。许多建筑和部队都会互相有所依赖。你不能在没有发电厂的情况下建造兵营。同样的，你不能在没有兵营的情况下训练部队。鼠标左键点选兵营图标，开始建造。完成之后，将兵营放置到地表，就像你建造冶炼厂和发电厂那样。",
         "Extra": "s05e LBL"
     },
     "VOX:mt2ds06": {
@@ -10703,7 +10703,7 @@
         "Value": "新帐号"
     },
     "WOL:NewAccountFetch": {
-        "Value": "连线到帐号服务器"
+        "Value": "连接到帐号服务器"
     },
     "GUI:ManageAccount": {
         "Value": "管理帐号"
@@ -10736,7 +10736,7 @@
         "Value": "无法在您设置的水准范围内找到合适对手 .."
     },
     "WOL:MatchFailPing": {
-        "Value": "无法找到可接受的连线速度之对手 .."
+        "Value": "无法找到可接受的连接速度的对手..."
     },
     "WOL:MatchFailWDTSide": {
         "Value": "无法在此领地内找到敌人"
@@ -10820,7 +10820,7 @@
         "Value": "发送情感消息。"
     },
     "STT:OptionInternetLatency": {
-        "Value": "调整预期的互联网连线延迟"
+        "Value": "调整预期的互联网连接延迟"
     },
     "STT:OptionInternetSpeedSlider": {
         "Value": "调整想要的游戏速度"
@@ -11036,7 +11036,7 @@
         "Value": "继续"
     },
     "STT:WOLBeginNickViewPrivacy": {
-        "Value": "连线至网站检视隐私权政策"
+        "Value": "在我们的网站上查看隐私政策"
     },
     "STT:WOLBeginNickCancel": {
         "Value": "取消并回到前一个画面"
@@ -11354,7 +11354,7 @@
         "Value": "提示：车辆能用来载运步兵，双击车辆即可让载员下车"
     },
     "MISSION:ALL01n": {
-        "Value": "提示：超时空采矿车会采集金矿，然后自动传送回精炼厂"
+        "Value": "提示：超时空采矿车会采集金矿，然后自动传送回冶炼厂"
     },
     "MISSION:ALL01o": {
         "Value": "提示：选择步兵页面以检视增加生产选项"
@@ -11552,7 +11552,7 @@
         "Value": "由苏联无畏级战舰领军的一支小型舰队已经抵达。"
     },
     "MISSION:Sov07k": {
-        "Value": "在宣传卡车残骸中发现了盟军间谍卫星地图……正在更新地图。"
+        "Value": "在宣传卡车残骸中发现了盟军侦查卫星地图……正在更新地图。"
     },
     "MISSION:Sov08c": {
         "Value": "摧毁纪念碑来获取克里姆林宫的奖励！"
@@ -12922,7 +12922,7 @@
         "Value": "限制画面分辨率"
     },
     "TXT_WDT_NET_ERR": {
-        "Value": "无法连线到征服世界服务器。"
+        "Value": "无法连接到征服世界服务器。"
     },
     "TXT_UNKNOWN_PING": {
         "Value": "PING：?"
@@ -13744,7 +13744,7 @@
         "Value": "%s并未拥有%s。"
     },
     "GUI:JoinerNoMap": {
-        "Value": "您并没有%s。请先确认一下自己拥有最新的地图，请连线至 www.westwood.com。"
+        "Value": "您并没有%s。请先确认一下自己是否拥有最新地图，请访问 www.westwood.com。"
     },
     "MSG:PlanningModeIntro1Button": {
         "Value": "您进入了路径点模式。再按一下路径点按钮即可退出。"
@@ -14179,7 +14179,7 @@
         "Value": "任务积分"
     },
     "GUI:MultiplayerScore": {
-        "Value": "多人连线积分"
+        "Value": "多人游戏积分"
     },
     "TXT_POWER_DRAIN2": {
         "Value": "电力 = %d 负载 = %d"
@@ -14479,13 +14479,13 @@
         "Value": "点选此处以观察游戏。"
     },
     "STT:LobbyButtonObserve": {
-        "Value": "观察已存在多人连线游戏"
+        "Value": "观察已存在多人游戏"
     },
     "TXT_LATENCY_ICON_TOOLTIP_PING": {
-        "Value": "介于 %s 与主机端的连线品质为 %s。Ping = %dms。"
+        "Value": "介于 %s 与主机端的连接品质为 %s。Ping = %dms。"
     },
     "TXT_LATENCY_ICON_TOOLTIP_NOPING": {
-        "Value": "介于 %s 与主机 %s 的连线品质为 %s。%s"
+        "Value": "介于 %s 与主机 %s 的连接品质为 %s。%s"
     },
     "TXT_GOOD": {
         "Value": "良好"
@@ -14512,7 +14512,7 @@
         "Value": "Westwood 线上使用图示说明"
     },
     "GUI:LatencyIconDesc": {
-        "Value": "介于玩家与主机端的连线品质。"
+        "Value": "介于玩家与主机端的连接品质。"
     },
     "TXT_PLAYER_TOOLTIP_UNR_C_CR": {
         "Value": "玩家姓名，%s，战团 %s，战团等级 = %d"
@@ -14551,25 +14551,25 @@
         "Value": "互联网游戏只能容纳四位玩家。"
     },
     "GUI:ConnectingToPlayers": {
-        "Value": "连线至至其他玩家"
+        "Value": "连接至至其他玩家"
     },
     "TXT_FAILED_TO_TALK": {
-        "Value": "无法连线至其他玩家\n"
+        "Value": "无法连接至其他玩家 \n"
     },
     "TXT_TALK_REPORTED_PROBLEM": {
-        "Value": "玩家 %s 发生连线问题\n"
+        "Value": "玩家 %s 发生连接问题 \n"
     },
     "TXT_TALK_LOCAL_PROBLEM": {
-        "Value": "无法连线至玩家 %s\n"
+        "Value": "无法连接至玩家 %s \n"
     },
     "TXT_TALK_FORWARDER_PROBLEM_GUES": {
-        "Value": "无法连线至游戏主机端\n"
+        "Value": "无法连接至游戏主机端 \n"
     },
     "TXT_TALK_FORWARDER_PROBLEM_HOST": {
-        "Value": "玩家 %s 无法连线至游戏主机端\n"
+        "Value": "玩家 %s 无法连接至游戏主机端 \n"
     },
     "TXT_TALK_HOST_ABORTED": {
-        "Value": "游戏主机端回应玩家间连线发生问题\n"
+        "Value": "游戏主机端回应玩家间连接发生问题 \n"
     },
     "GUI:HostMapTransfer": {
         "Value": "%s 并未拥有非官方地图 %s，将会于游戏开始时传送给对方。"
@@ -14602,7 +14602,7 @@
         "Value": "其他玩家于传送给您前进行延迟（建议进阶玩家使用）。"
     },
     "TXT_FIREWALL_SETTINGS_WARNING1": {
-        "Value": "警告：\n只有极少数防火墙需要开启 '传送延迟' 选项，同时假如于不需要状况下开启将导致连线问题。"
+        "Value": "警告：\n只有极少数防火墙需要开启 '传送延迟' 选项，同时假如在不需要的情况下开启将导致连接问题。"
     },
     "TXT_FIREWALL_SETTINGS_WARNING2": {
         "Value": "警告：\n需要指定一组包含静态提交规则的防火墙区域端口号。\n大部分防火墙及 NAT 都不需变更这个数值就可以自动支持。"

@@ -3,6 +3,8 @@ run-name: Packing Language Pack...
 on:
   push:
   workflow_dispatch:
+    branches:
+      - main
   release:
     types: [published]
 jobs:
