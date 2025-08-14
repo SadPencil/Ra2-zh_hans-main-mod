@@ -1,6 +1,8 @@
 tslaicon,磁暴线圈
 ttnkicon,磁能坦克
 ttnkuico,磁能坦克
+sealicon,海豹部队
+sealuico,海豹部队
 shadicon,夜鹰直升机
 shaduico,夜鹰直升机
 adogicon,警犬
@@ -74,6 +76,8 @@ asaticon,间谍卫星
 bolticon,闪电风暴
 brrkicon,兵营
 engnicon,工程师
+aengicon,工程师
+aenguico,工程师
 dlphicon,海豚
 gcanicon,巨炮
 gorep,矿石精炼器
@@ -110,7 +114,7 @@ ntchicon,作战实验室
 wethicon,天气控制机
 wallicon,围墙
 nwalicon,围墙
-plticon,哨兵枪
+plticon,哨戒炮
 pillicon,机枪碉堡
 powricon,发电厂
 psicicon,心灵突击队
@@ -118,9 +122,9 @@ psicuico,心灵突击队
 trkaicon,自爆卡车
 rtnkicon,幻影坦克
 rtnkuico,幻影坦克
-psiticon,心灵部队
-psituico,心灵部队
+psiticon,超能力部队
+psituico,超能力部队
 yuriicon,尤里
 yuriuico,尤里
-yurpicon,至尊尤里
-yurpuico,至尊尤里
+yurpicon,尤里改
+yurpuico,尤里改
