@@ -14,6 +14,19 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Convert json to csf
+        run: |
+          cd ./.github/scripts/convert-json-to-csf
+          node index.js
+      - name: Copy csf file for pack
+        run: |
+          Copy-Item "./ra2.csf" -Destination "./_src_files/language/" -Force
+          Copy-Item "./ra2md.csf" -Destination "./_src_files/langmd/" -Force
+        shell: pwsh
       - name: Convert cameo to shp files
         run: |
           cd ./.github/scripts/convert-png-to-shp
